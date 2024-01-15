@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	float length, width, area;
+    setbuf(stdout, NULL);
+	printf("Enter length and Width to find its area: ");
+	scanf("%f%f", &length, &width);
+	area = length * width;
+	printf("%f", area);
+	return EXIT_SUCCESS;
+}
