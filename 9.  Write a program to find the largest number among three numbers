@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	int num1 = 8, num2 = 9, num3 = 5;
+	setbuf(stdout, NULL);
+	if(num1>num2){
+		if(num1>num3){
+			printf("Larger number is: %d", num1);
+		}
+	}
+	else if(num2>num1){
+		if(num2>num3){
+			printf("Larger number is: %d", num2);
+		}
+	}
+	else{
+		printf("Larger number is: %d", num3);
+	}
+	return EXIT_SUCCESS;
+}
