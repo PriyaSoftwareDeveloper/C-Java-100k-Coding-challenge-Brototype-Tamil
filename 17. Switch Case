@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	int choice;
+	setbuf(stdout, NULL);
+	printf("1 for Parotta \n2 for Biriyani \n3 for Fried rice \n4 for Noodles \nEnter your choice: ");
+	scanf("%d", &choice);
+	switch(choice){
+	case 1:
+		printf("You have selected Parotta");
+		break;
+
+	case 2:
+		printf("You have selected Biriyani");
+		break;
+
+	case 3:
+		printf("You have selected Fried rice");
+		break;
+
+	case 4:
+		printf("You have selected Noodles");
+		break;
+
+	default:
+		printf("Wrong Entry");
+	}
+	return EXIT_SUCCESS;
+}
