@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	int i,n,flag=0;
+	setbuf(stdout, NULL);
+	printf("Enter some number: ");
+	scanf("%d", &n);
+	for(i=2; i<=n/2; i++){
+		if(n%i==0){ //not prime
+			flag=1; //not prime
+			break;
+		}
+	}
+	if(flag==0){
+		printf("Prime");
+	} else {
+		printf("Not Prime");
+	}
+	return EXIT_SUCCESS;
+}
