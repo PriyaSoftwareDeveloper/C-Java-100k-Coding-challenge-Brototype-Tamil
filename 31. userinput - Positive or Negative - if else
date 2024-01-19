@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class IfSample {
+
+	public static void main(String a[]) {
+		System.out.println("Enter a number: ");
+	
+		Scanner pn = new Scanner(System.in);
+	
+		int num = pn.nextInt(); // scanner la receive pana value ah num ku assign panrom
+	
+		if(num<0) {
+			System.out.println("Number is Negative");
+		} else {
+			System.out.println("Number is Positive");
+		}
+	}
+}
