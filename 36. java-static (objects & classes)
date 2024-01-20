@@ -1,0 +1,36 @@
+
+public class Hello {
+	
+	static int a = 10;
+	static int b = 20;
+	
+	public static void main(String[] args) {
+		
+		b=40;
+		
+		b = 1500;
+			
+			Hello h = new Hello();	
+			Hello h1 = new Hello();
+			
+			h.b = 50;
+			h1.b = 100;
+			
+			h.a = 200;
+			h1.a = 500;
+			
+			System.out.println(h1.a);
+			
+			h.hello();
+			hey();
+			h.hey();		
+	}
+	
+	static void hello() {
+		
+	}
+	
+	static void hey() {
+		
+	}
+}
