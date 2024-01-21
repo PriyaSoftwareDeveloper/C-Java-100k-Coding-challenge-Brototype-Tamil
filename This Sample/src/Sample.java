@@ -6,6 +6,12 @@ public class Sample {
 		
 		Sample(int a, int b){
 			
+			a = this.a;
 			System.out.println(a + " " + b);
+			
+//			this.a = a; //this.a->global variable a->local variable
+//			System.out.println("this.a " + a);
+			
+			
 		}
 }
