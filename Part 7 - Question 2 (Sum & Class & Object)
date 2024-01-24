@@ -1,0 +1,35 @@
+CLASS 1:
+public class Sample {
+	public static void main(String[] args) {
+		Sum add = new Sum();
+		add.Getinput();
+		add.DisplaySum();
+	}
+}
+
+CLASS 2:
+import java.util.Scanner;
+
+public class Sum {
+	
+	int num1, num2, result;
+	
+	public void Getinput() {
+		
+		Scanner s = new Scanner(System.in);
+		
+		System.out.print("Enter num1: ");
+		num1 = s.nextInt();
+		
+		System.out.print("Enter num2: ");		
+		num2 = s.nextInt();
+		
+	}
+	
+	public void DisplaySum() {
+		
+		result = num1 + num2;
+		System.out.println("Result: " + result);
+	}
+}
+
