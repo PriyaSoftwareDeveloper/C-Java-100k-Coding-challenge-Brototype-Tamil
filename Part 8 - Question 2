@@ -1,0 +1,34 @@
+CLASS 1:
+
+public class mainClass {
+	public static void main(String[] args) {
+		new constructorOverloading(5, 4);
+		new constructorOverloading(55.0, 5);
+		new constructorOverloading(2.0, 2.0);
+		new constructorOverloading(25, 5.0);		
+	}
+}
+
+CLASS 2:
+
+public class constructorOverloading{
+	constructorOverloading(int a, int b){
+		int add = a + b;
+		System.out.println("Addition Result is: " + add);
+	}
+	
+	constructorOverloading(double n1, int n2){
+		double div  = n1 / n2;
+		System.out.println("Division Result is: " + div);
+	}
+	
+	constructorOverloading(double num1, double num2){
+		double mul = num1 * num2;
+		System.out.println("Multiplication Result is: " + mul);
+	}
+	
+	constructorOverloading(int num1, double num2){
+		double sub = num1 - num2;
+		System.out.println("Subtraction Result is: " + sub);
+	}	
+}
