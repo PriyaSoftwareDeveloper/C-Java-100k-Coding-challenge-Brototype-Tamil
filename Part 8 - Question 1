@@ -1,0 +1,39 @@
+CLASS 1:
+class mainClass {
+	public static void main(String[] args) {
+		
+		hello h = new hello(10);	
+		
+	}
+}
+
+
+CLASS 2:
+import java.util.Scanner;
+
+class hello {
+	
+	void checkNumber() {
+		System.out.println("Happy Number");
+	}
+
+	hello(int value){
+		try(Scanner s = new Scanner(System.in)) {
+		System.out.println("Enter a Number: ");
+		int num = s.nextInt();
+		if(num%2==0){
+			System.out.println("Even number");
+			this.checkNumber();
+		} else {
+			System.out.println("Odd number");
+		}
+	  }
+   }
+}
+
+
+
+
+		
+	
+
