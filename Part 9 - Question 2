@@ -1,0 +1,32 @@
+CLASS 1:
+interface AnimalInterface{
+		void makeSound();
+	}
+
+
+public class Animal {
+	
+	public static void main(String[] args) {
+		Dog myDog = new Dog();
+		Cat myCat = new Cat();
+		
+		myDog.makeSound();
+		myCat.makeSound();
+	}
+}
+
+CLASS 2:
+
+class Dog implements AnimalInterface{
+	public void makeSound() {
+		System.out.println("Woof!");
+	}
+}
+
+CLASS 3:
+
+class Cat implements AnimalInterface {
+	public void makeSound() {
+		System.out.println("Meow!");
+	}
+}
