@@ -1,0 +1,30 @@
+CLASS 1:
+abstract class Drawable {
+    abstract void draw();
+
+    public void drawThreaded() {
+        Thread thread = new Thread(() -> {
+            try {
+                draw();
+            } catch (Exception e) {
+                System.out.println("Error drawing shape");
+            }
+        });
+        thread.start();
+    }
+}
+
+CLASS 2:
+class Circle extends Drawable {
+    @Override
+    public void draw() {
+        System.out.println("Drawing a circle");
+    }
+
+
+
+    public static void main(String args[]) {
+        Circle circle = new Circle();
+        circle.drawThreaded();
+    }
+}
