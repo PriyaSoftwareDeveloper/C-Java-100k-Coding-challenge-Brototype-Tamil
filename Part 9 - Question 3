@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class DivideNumbers {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		
+		try {
+			System.out.println("Enter the First Number: ");
+			int numerator = scanner.nextInt();
+			
+			System.out.println("Enter the Second Number: ");
+			int denominator = scanner.nextInt();
+			
+			double result = divideNumbers(numerator, denominator);
+			System.out.println("Result of division: " + result);
+			
+		} catch (ArithmeticException e) {
+			System.out.println("Cannot divide by zero!");
+			
+		} finally {
+			System.out.println("Program execution complete!");
+			scanner.close();
+		}				
+	}
+	
+	private static double divideNumbers(int numerator, int denominator) {
+		if(denominator == 0) {
+			throw new ArithmeticException("Cannot divide by zero!");
+		}
+		return (double) numerator/denominator;
+	}
+}
